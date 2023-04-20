@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 // mongoose.connect("mongodb://localhost:27017/blogDB", {useNewUrlParser: true});
-const CONNECTION_URL = `mongodb+srv://sinhayash:${process.env.MONGOD}@cluster0.14ggcya.mongodb.net/blogs?retryWrites=true&w=majority`;mongoose.connect(CONNECTION_URL, {
+const CONNECTION_URL = `mongodb+srv://sinhayash:yash1234@cluster0.14ggcya.mongodb.net/blogs?retryWrites=true&w=majority`;mongoose.connect(CONNECTION_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
