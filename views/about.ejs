@@ -1,0 +1,38 @@
+<%- include('partials/header.ejs'); -%>
+
+<div >
+  <h1 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 30px">
+    About Us
+  </h1>
+  <p style="font-size: 1.2rem; line-height: 1.5; margin-bottom: 30px">
+    <%= aboutContent %>
+  </p>
+  <hr>
+  <br>
+  <div style="display: flex; align-items: center; margin-bottom: 50px">
+    <img
+      src="2.jpg"
+      alt="Team Member"
+      style="
+        border-radius: 50%;
+        margin-right: 30px;
+        height: 150px;
+        width: 150px;
+      "
+    />
+    <div>
+      <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 20px">
+        Yash Sinha
+      </h2>
+      <p style="font-size: 1.2rem; line-height: 1.5; margin: 0">
+        I'm a freelance writer and editor with over 10 years of experience in
+        the industry. I'm passionate about helping others and enjoys developing
+        including <a href="https://crypto-app-tawny-eight.vercel.app/" target="blank">CryptoApp</a>.
+        <a href="">TaskMates</a>
+        etc
+      </p>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer.ejs'); -%>

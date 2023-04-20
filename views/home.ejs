@@ -1,0 +1,54 @@
+<%- include("partials/header"); -%>
+
+<header
+  style="
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  "
+>
+  <h1 style="font-size: 32px; color: #333; margin: 0">My Blog</h1>
+</header>
+
+<main
+  style="
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  "
+>
+  <article
+    style="
+      flex-basis: 70%;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    "
+  >
+    <h2 style="font-size: 24px; color: #333; margin: 0; margin-bottom: 10px">
+      <% posts.forEach(function(post){ %>
+
+      <h1><%=post.title%></h1>
+      <p>
+        <%=post.content.substring(0, 100) + " ..."%>
+        <a href="/posts/<%=post._id%>">Read More</a>
+      </p>
+
+      <% }) %>
+    </h2>
+  </article>
+  <aside
+    style="
+      flex-basis: 30%;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    "
+  >
+  </aside>
+</main>
